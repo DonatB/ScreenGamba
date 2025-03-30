@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A8F3E7852D98B7430070FB78 /* DeviceActivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F3E7842D98B7430070FB78 /* DeviceActivity.framework */; };
+		A8F3E78D2D98B7430070FB78 /* BlockerMonitor.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A8F3E7822D98B7430070FB78 /* BlockerMonitor.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A8F3E7942D98B78F0070FB78 /* ScreenTimeShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F3E7932D98B78F0070FB78 /* ScreenTimeShared.swift */; };
+		A8F3E7952D98B78F0070FB78 /* ScreenTimeShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F3E7932D98B78F0070FB78 /* ScreenTimeShared.swift */; };
+		A8F3E7A62D98BF230070FB78 /* BlockerReport.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = A8F3E79A2D98BF230070FB78 /* BlockerReport.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A8F3E78B2D98B7430070FB78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8F3E7602D98B60B0070FB78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8F3E7812D98B7430070FB78;
+			remoteInfo = BlockerMonitor;
+		};
+		A8F3E7A42D98BF230070FB78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8F3E7602D98B60B0070FB78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8F3E7992D98BF230070FB78;
+			remoteInfo = BlockerReport;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A8F3E7922D98B7430070FB78 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A8F3E78D2D98B7430070FB78 /* BlockerMonitor.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8F3E7AB2D98BF230070FB78 /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				A8F3E7A62D98BF230070FB78 /* BlockerReport.appex in Embed ExtensionKit Extensions */,
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A8F3E7682D98B60B0070FB78 /* ScreenGamba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenGamba.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8F3E7822D98B7430070FB78 /* BlockerMonitor.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BlockerMonitor.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8F3E7842D98B7430070FB78 /* DeviceActivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeviceActivity.framework; path = System/Library/Frameworks/DeviceActivity.framework; sourceTree = SDKROOT; };
+		A8F3E7932D98B78F0070FB78 /* ScreenTimeShared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTimeShared.swift; sourceTree = "<group>"; };
+		A8F3E79A2D98BF230070FB78 /* BlockerReport.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = BlockerReport.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A8F3E78E2D98B7430070FB78 /* Exceptions for "BlockerMonitor" folder in "BlockerMonitor" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A8F3E7812D98B7430070FB78 /* BlockerMonitor */;
+		};
+		A8F3E7A72D98BF230070FB78 /* Exceptions for "BlockerReport" folder in "BlockerReport" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A8F3E7992D98BF230070FB78 /* BlockerReport */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A8F3E76A2D98B60B0070FB78 /* ScreenGamba */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ScreenGamba;
+			sourceTree = "<group>";
+		};
+		A8F3E7862D98B7430070FB78 /* BlockerMonitor */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A8F3E78E2D98B7430070FB78 /* Exceptions for "BlockerMonitor" folder in "BlockerMonitor" target */,
+			);
+			path = BlockerMonitor;
+			sourceTree = "<group>";
+		};
+		A8F3E79B2D98BF230070FB78 /* BlockerReport */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A8F3E7A72D98BF230070FB78 /* Exceptions for "BlockerReport" folder in "BlockerReport" target */,
+			);
+			path = BlockerReport;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8F3E7652D98B60B0070FB78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8F3E77F2D98B7430070FB78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8F3E7852D98B7430070FB78 /* DeviceActivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8F3E7972D98BF230070FB78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A8F3E75F2D98B60B0070FB78 = {
+			isa = PBXGroup;
+			children = (
+				A8F3E7932D98B78F0070FB78 /* ScreenTimeShared.swift */,
+				A8F3E76A2D98B60B0070FB78 /* ScreenGamba */,
+				A8F3E7862D98B7430070FB78 /* BlockerMonitor */,
+				A8F3E79B2D98BF230070FB78 /* BlockerReport */,
+				A8F3E7832D98B7430070FB78 /* Frameworks */,
+				A8F3E7692D98B60B0070FB78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A8F3E7692D98B60B0070FB78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8F3E7682D98B60B0070FB78 /* ScreenGamba.app */,
+				A8F3E7822D98B7430070FB78 /* BlockerMonitor.appex */,
+				A8F3E79A2D98BF230070FB78 /* BlockerReport.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8F3E7832D98B7430070FB78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8F3E7842D98B7430070FB78 /* DeviceActivity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A8F3E7672D98B60B0070FB78 /* ScreenGamba */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8F3E7762D98B60C0070FB78 /* Build configuration list for PBXNativeTarget "ScreenGamba" */;
+			buildPhases = (
+				A8F3E7642D98B60B0070FB78 /* Sources */,
+				A8F3E7652D98B60B0070FB78 /* Frameworks */,
+				A8F3E7662D98B60B0070FB78 /* Resources */,
+				A8F3E7922D98B7430070FB78 /* Embed Foundation Extensions */,
+				A8F3E7AB2D98BF230070FB78 /* Embed ExtensionKit Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8F3E78C2D98B7430070FB78 /* PBXTargetDependency */,
+				A8F3E7A52D98BF230070FB78 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A8F3E76A2D98B60B0070FB78 /* ScreenGamba */,
+			);
+			name = ScreenGamba;
+			packageProductDependencies = (
+			);
+			productName = ScreenGamba;
+			productReference = A8F3E7682D98B60B0070FB78 /* ScreenGamba.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A8F3E7812D98B7430070FB78 /* BlockerMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8F3E78F2D98B7430070FB78 /* Build configuration list for PBXNativeTarget "BlockerMonitor" */;
+			buildPhases = (
+				A8F3E77E2D98B7430070FB78 /* Sources */,
+				A8F3E77F2D98B7430070FB78 /* Frameworks */,
+				A8F3E7802D98B7430070FB78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A8F3E7862D98B7430070FB78 /* BlockerMonitor */,
+			);
+			name = BlockerMonitor;
+			packageProductDependencies = (
+			);
+			productName = BlockerMonitor;
+			productReference = A8F3E7822D98B7430070FB78 /* BlockerMonitor.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		A8F3E7992D98BF230070FB78 /* BlockerReport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8F3E7A82D98BF230070FB78 /* Build configuration list for PBXNativeTarget "BlockerReport" */;
+			buildPhases = (
+				A8F3E7962D98BF230070FB78 /* Sources */,
+				A8F3E7972D98BF230070FB78 /* Frameworks */,
+				A8F3E7982D98BF230070FB78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A8F3E79B2D98BF230070FB78 /* BlockerReport */,
+			);
+			name = BlockerReport;
+			packageProductDependencies = (
+			);
+			productName = BlockerReport;
+			productReference = A8F3E79A2D98BF230070FB78 /* BlockerReport.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8F3E7602D98B60B0070FB78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					A8F3E7672D98B60B0070FB78 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					A8F3E7812D98B7430070FB78 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					A8F3E7992D98BF230070FB78 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = A8F3E7632D98B60B0070FB78 /* Build configuration list for PBXProject "ScreenGamba" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A8F3E75F2D98B60B0070FB78;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A8F3E7692D98B60B0070FB78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8F3E7672D98B60B0070FB78 /* ScreenGamba */,
+				A8F3E7812D98B7430070FB78 /* BlockerMonitor */,
+				A8F3E7992D98BF230070FB78 /* BlockerReport */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A8F3E7662D98B60B0070FB78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8F3E7802D98B7430070FB78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8F3E7982D98BF230070FB78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8F3E7642D98B60B0070FB78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8F3E7952D98B78F0070FB78 /* ScreenTimeShared.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8F3E77E2D98B7430070FB78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8F3E7942D98B78F0070FB78 /* ScreenTimeShared.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8F3E7962D98BF230070FB78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A8F3E78C2D98B7430070FB78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8F3E7812D98B7430070FB78 /* BlockerMonitor */;
+			targetProxy = A8F3E78B2D98B7430070FB78 /* PBXContainerItemProxy */;
+		};
+		A8F3E7A52D98BF230070FB78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8F3E7992D98BF230070FB78 /* BlockerReport */;
+			targetProxy = A8F3E7A42D98BF230070FB78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A8F3E7742D98B60C0070FB78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A8F3E7752D98B60C0070FB78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A8F3E7772D98B60C0070FB78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ScreenGamba/ScreenGamba.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ScreenGamba/Preview Content\"";
+				DEVELOPMENT_TEAM = 3HQRPFD3K3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Donat.ScreenGamba;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A8F3E7782D98B60C0070FB78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ScreenGamba/ScreenGamba.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ScreenGamba/Preview Content\"";
+				DEVELOPMENT_TEAM = 3HQRPFD3K3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Donat.ScreenGamba;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A8F3E7902D98B7430070FB78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BlockerMonitor/BlockerMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3HQRPFD3K3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlockerMonitor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BlockerMonitor;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Donat.ScreenGamba.BlockerMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A8F3E7912D98B7430070FB78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BlockerMonitor/BlockerMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3HQRPFD3K3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlockerMonitor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BlockerMonitor;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Donat.ScreenGamba.BlockerMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A8F3E7A92D98BF230070FB78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BlockerReport/BlockerReport.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3HQRPFD3K3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlockerReport/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BlockerReport;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Donat.ScreenGamba.BlockerReport;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A8F3E7AA2D98BF230070FB78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BlockerReport/BlockerReport.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3HQRPFD3K3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlockerReport/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BlockerReport;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Donat.ScreenGamba.BlockerReport;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8F3E7632D98B60B0070FB78 /* Build configuration list for PBXProject "ScreenGamba" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8F3E7742D98B60C0070FB78 /* Debug */,
+				A8F3E7752D98B60C0070FB78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8F3E7762D98B60C0070FB78 /* Build configuration list for PBXNativeTarget "ScreenGamba" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8F3E7772D98B60C0070FB78 /* Debug */,
+				A8F3E7782D98B60C0070FB78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8F3E78F2D98B7430070FB78 /* Build configuration list for PBXNativeTarget "BlockerMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8F3E7902D98B7430070FB78 /* Debug */,
+				A8F3E7912D98B7430070FB78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8F3E7A82D98BF230070FB78 /* Build configuration list for PBXNativeTarget "BlockerReport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8F3E7A92D98BF230070FB78 /* Debug */,
+				A8F3E7AA2D98BF230070FB78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A8F3E7602D98B60B0070FB78 /* Project object */;
+}
