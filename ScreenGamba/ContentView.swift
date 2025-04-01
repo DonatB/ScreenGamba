@@ -9,12 +9,9 @@ struct ContentView: View {
         NavigationView {
             VStack(spacing: 20) {
                 Button("Select Apps to Block") {
-                    // --- MODIFICATION START ---
-                    // Use a Task to call the async authorization function
                     Task {
                         await requestAuthorizationAndShowPicker()
                     }
-                    // --- MODIFICATION END ---
                 }
                 .buttonStyle(.borderedProminent)
 
@@ -62,30 +59,24 @@ struct ContentView: View {
                      }
                  }
             } message: {
-                 Text("Please grant Screen Time permissions to select apps. This is usually managed in the main Settings > Screen Time section, not within this app's specific settings page.") // Updated message slightly
+                 Text("Please grant Screen Time permissions to select apps. This is usually managed in the main Settings > Screen Time section, not within this app's specific settings page.")
             }
-            // Removed the .onAppear request, rely on the button tap
+            
         }
     }
 
-    // --- NEW ASYNC FUNCTION ---
-    @MainActor // Ensures UI updates run on the main thread
+    @MainActor
     private func requestAuthorizationAndShowPicker() async {
         do {
-            // Use the modern async method for the current user
             try await AuthorizationCenter.shared.requestAuthorization(for: .individual)
 
-            // If the above line doesn't throw an error, permission is granted (or was already granted)
             print("Authorization successful or already granted.")
             model.isPickerPresented = true // Show the picker
 
         } catch {
-            // If an error occurs (e.g., denied by user, restrictions), handle it
             print("Authorization failed: \(error.localizedDescription)")
-            isAuthorizationAlertPresented = true // Show the alert explaining failure
+            isAuthorizationAlertPresented = true
         }
     }
-    // --- END NEW ASYNC FUNCTION ---
 }
 
-// ContentView_Previews remains the same

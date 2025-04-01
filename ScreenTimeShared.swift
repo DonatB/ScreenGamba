@@ -12,3 +12,4 @@ let appGroupName = "group.com.Donat.ScreenGamba"
 
 // Key for UserDefaults
 let selectionToDiscourageKey = "SelectionToDiscourage"
+

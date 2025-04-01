@@ -1,24 +1,21 @@
 import DeviceActivity
 import Foundation
 import ManagedSettings
-import FamilyControls // Needed for FamilyActivitySelection
-import os // Import os.log for potentially more reliable logging from extensions
+import FamilyControls
+import os
 
-// Ensure this matches the subsystem used before, or update if needed
 let logger = Logger(subsystem: "com.Donat.ScreenGamba.BlockerMonitor", category: "MonitorLogic")
 
-// Class name matches the Plist principal class
 class DeviceActivityMonitorExtension: DeviceActivityMonitor {
 
     // Bring back the store and userDefaults using the shared constant
     lazy var store = ManagedSettingsStore()
-    lazy var userDefaults = UserDefaults(suiteName: appGroupName) // Ensure appGroupName is defined in ScreenTimeShared.swift
+    lazy var userDefaults = UserDefaults(suiteName: appGroupName)
 
     override func intervalDidStart(for activity: DeviceActivityName) {
         super.intervalDidStart(for: activity)
         logger.log("✅ DeviceActivityMonitorExtension: Interval starting for \(activity.rawValue)")
 
-        // Explicitly check UserDefaults initialization
         guard let defaults = userDefaults else {
             logger.error("❌ DeviceActivityMonitorExtension: Failed to initialize UserDefaults with suite name: \(appGroupName). App Group configured correctly?")
             return

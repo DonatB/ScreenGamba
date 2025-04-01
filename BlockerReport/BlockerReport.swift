@@ -15,6 +15,5 @@ struct BlockerReport: DeviceActivityReportExtension {
         TotalActivityReport { totalActivity in
             TotalActivityView(totalActivity: totalActivity)
         }
-        // Add more reports here...
     }
 }
